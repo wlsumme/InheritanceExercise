@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 
 namespace Inheritance
 {
@@ -28,12 +29,30 @@ namespace Inheritance
              *  
              * Creatively display the class member values 
              */
+            var pigeon = new Birds();
+            pigeon.CanFly = true;
+            pigeon.CawSound = "bbbuuu";
+            pigeon.EyesNum = 1;
+            pigeon.Color = "Grey";
+            pigeon.Name = "Pigeon";
+            Console.WriteLine($"My fav bird is the {pigeon.Name}. Can it fly? {pigeon.CanFly}. it has only {pigeon.EyesNum} and is  {pigeon.Color}");
+
 
             /*Create an object of your Reptile class
              *  give values to your members using the object of your Reptile class
              *  
              * Creatively display the class member values 
              */
+            var slippy = new Reptiles();
+            slippy.TailLength = 12;
+            slippy.LegsNum = 4;
+            slippy.IsSticky = true;
+            slippy.EyeColor = "Blue";
+            slippy.NumberOfToes = 1;
+            slippy.Tasty = false;
+            slippy.Name = "slippy";
+
+            Console.WriteLine($"I have a pet reptile. its name is {slippy.Name}. it only has {slippy.NumberOfToes} toe and has {slippy.EyeColor} eyes. Is he tasty? {slippy.Tasty}");
         }
     }
 }
